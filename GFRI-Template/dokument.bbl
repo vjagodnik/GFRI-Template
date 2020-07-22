@@ -1,0 +1,34 @@
+\begin{thebibliography}{1}
+
+\bibitem{Peiris1970}
+Peiris A, Yoshida N.
+\newblock {Dilatancy Characteristics Of Sand}.
+\newblock WIT Transactions on The Built Environment. 1970 jan;15.
+\newblock Available from:
+  \url{https://www.witpress.com/elibrary/wit-transactions-on-the-built-environment/15/10433{\#}.XW0jbFmalhU.mendeley}.
+
+\bibitem{Massoudi2001}
+Massoudi M, Mehrabadi MM.
+\newblock {A continuum model for granular materials: Considering dilatancy and
+  the Mohr-Coulomb criterion}.
+\newblock Acta Mechanica. 2001;152(1):121--138.
+\newblock Available from: \url{https://doi.org/10.1007/BF01176949}.
+
+\bibitem{Gutierrez2009}
+Gutierrez M, Wang J.
+\newblock {Non-coaxial version of Rowe's stress-dilatancy relation}.
+\newblock Granular Matter. 2009;11(2):129--137.
+\newblock Available from: \url{https://doi.org/10.1007/s10035-008-0124-0}.
+
+\bibitem{doi:10.1680/geot.1986.36.1.65}
+Bolton MD.
+\newblock {The strength and dilatancy of sands}.
+\newblock G{\'{e}}otechnique. 1986;36(1):65--78.
+\newblock Available from: \url{https://doi.org/10.1680/geot.1986.36.1.65}.
+
+\bibitem{krahn}
+Krahn J.
+\newblock Stress and Deformation Modeling with Sigma-W.
+\newblock GEO-SLOPE International Ltd, Alberta, Canada; 2004.
+
+\end{thebibliography}
