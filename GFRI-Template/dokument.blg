@@ -1,11 +1,11 @@
 This is BibTeX, Version 0.99d (TeX Live 2020)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: dokument.aux
-The style file: vancouver.bst
-Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
-Reallocated global_strs (elt_size=200001) to 20 items from 10.
-Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+The style file: unsrtnat-GFRI.bst
+Illegal, another \bibstyle command---line 53 of file dokument.aux
+ : \bibstyle
+ :          {vancouver}
+I'm skipping whatever remains of this command
 Database file #1: bibliography.bib
 You're missing a field name---line 14 of file bibliography.bib
  :  
@@ -13,44 +13,44 @@ You're missing a field name---line 14 of file bibliography.bib
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 You've used 5 entries,
-            3170 wiz_defined-function locations,
-            682 strings with 5429 characters,
-and the built_in function-call counts, 5184 in all, are:
-= -- 674
-> -- 32
-< -- 0
-+ -- 19
-- -- 8
-* -- 374
-:= -- 594
-add.period$ -- 23
+            2481 wiz_defined-function locations,
+            598 strings with 5457 characters,
+and the built_in function-call counts, 1830 in all, are:
+= -- 185
+> -- 59
+< -- 5
++ -- 26
+- -- 16
+* -- 135
+:= -- 304
+add.period$ -- 25
 call.type$ -- 5
-change.case$ -- 0
-chr.to.int$ -- 0
+change.case$ -- 11
+chr.to.int$ -- 5
 cite$ -- 5
-duplicate$ -- 522
-empty$ -- 481
-format.name$ -- 11
-if$ -- 1232
-int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 44
-newline$ -- 32
-num.names$ -- 5
-pop$ -- 74
+duplicate$ -- 89
+empty$ -- 162
+format.name$ -- 27
+if$ -- 383
+int.to.chr$ -- 1
+int.to.str$ -- 6
+missing$ -- 4
+newline$ -- 43
+num.names$ -- 15
+pop$ -- 24
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 5
 quote$ -- 0
-skip$ -- 77
+skip$ -- 57
 stack$ -- 0
-substring$ -- 761
-swap$ -- 97
+substring$ -- 79
+swap$ -- 10
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 35
 warning$ -- 0
-while$ -- 37
-width$ -- 6
-write$ -- 65
-(There was 1 error message)
+while$ -- 16
+width$ -- 0
+write$ -- 92
+(There were 2 error messages)

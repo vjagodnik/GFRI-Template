@@ -1,34 +1,45 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem{Peiris1970}
-Peiris A, Yoshida N.
+\bibitem[Peiris and Yoshida(1970)]{Peiris1970}
+Peiris, A. and Yoshida, N.
 \newblock {Dilatancy Characteristics Of Sand}.
-\newblock WIT Transactions on The Built Environment. 1970 jan;15.
-\newblock Available from:
+\newblock \emph{WIT Transactions on The Built Environment}, 15, jan 1970.
+\newblock \doi{10.2495/SD950121}.
+\newblock URL
   \url{https://www.witpress.com/elibrary/wit-transactions-on-the-built-environment/15/10433{\#}.XW0jbFmalhU.mendeley}.
 
-\bibitem{Massoudi2001}
-Massoudi M, Mehrabadi MM.
+\bibitem[Massoudi and Mehrabadi(2001)]{Massoudi2001}
+Massoudi, M and Mehrabadi, M~M.
 \newblock {A continuum model for granular materials: Considering dilatancy and
   the Mohr-Coulomb criterion}.
-\newblock Acta Mechanica. 2001;152(1):121--138.
-\newblock Available from: \url{https://doi.org/10.1007/BF01176949}.
+\newblock \emph{Acta Mechanica}, 152\penalty0 (1):\penalty0 121--138, 2001.
+\newblock ISSN 1619-6937.
+\newblock \doi{10.1007/BF01176949}.
+\newblock URL \url{https://doi.org/10.1007/BF01176949}.
 
-\bibitem{Gutierrez2009}
-Gutierrez M, Wang J.
+\bibitem[Gutierrez and Wang(2009)]{Gutierrez2009}
+Gutierrez, Marte and Wang, Jianfeng.
 \newblock {Non-coaxial version of Rowe's stress-dilatancy relation}.
-\newblock Granular Matter. 2009;11(2):129--137.
-\newblock Available from: \url{https://doi.org/10.1007/s10035-008-0124-0}.
+\newblock \emph{Granular Matter}, 11\penalty0 (2):\penalty0 129--137, 2009.
+\newblock ISSN 1434-7636.
+\newblock \doi{10.1007/s10035-008-0124-0}.
+\newblock URL \url{https://doi.org/10.1007/s10035-008-0124-0}.
 
-\bibitem{doi:10.1680/geot.1986.36.1.65}
-Bolton MD.
+\bibitem[Bolton(1986)]{doi:10.1680/geot.1986.36.1.65}
+Bolton, M~D.
 \newblock {The strength and dilatancy of sands}.
-\newblock G{\'{e}}otechnique. 1986;36(1):65--78.
-\newblock Available from: \url{https://doi.org/10.1680/geot.1986.36.1.65}.
+\newblock \emph{G{\'{e}}otechnique}, 36\penalty0 (1):\penalty0 65--78, 1986.
+\newblock \doi{10.1680/geot.1986.36.1.65}.
+\newblock URL \url{https://doi.org/10.1680/geot.1986.36.1.65}.
 
-\bibitem{krahn}
-Krahn J.
-\newblock Stress and Deformation Modeling with Sigma-W.
-\newblock GEO-SLOPE International Ltd, Alberta, Canada; 2004.
+\bibitem[Krahn(2004)]{krahn}
+Krahn, J.
+\newblock Stress and deformation modeling with sigma-w.
+\newblock Technical report, GEO-SLOPE International Ltd, Alberta, Canada, 2004.
 
 \end{thebibliography}

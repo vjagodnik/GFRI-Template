@@ -24,7 +24,6 @@
 \usepackage{ragged2e}
 \usepackage[svgnames,table]{xcolor}
 \usepackage{tikz}
-\usepackage{pgfplots}
 \usepackage{longtable}
 %\usepackage{changepage}
 \usepackage{setspace}
@@ -57,8 +56,29 @@ headheight=1in]{geometry}
 \usepackage[croatian]{babel}
 \usepackage{setspace}
 \usepackage{lipsum}
-
+\makeatletter
+\setlength{\@fptop}{0 pt}
+\makeatother
 \graphicspath{{Slike/}}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+
+ %%%%%%%%%%%% Literatura  %%%%%%%%%%%%%%
+\usepackage[square,numbers,sort]{natbib}
+
+%\pgfplotsset{
+%	legend entry/.initial=,
+%	every axis plot post/.code={%
+%		\pgfkeysgetvalue{/pgfplots/legend entry}\tempValue
+%		\ifx\tempValue\empty
+%		\pgfkeysalso{/pgfplots/forget plot}%
+%		\else
+%		\expandafter\addlegendentry\expandafter{\tempValue}%
+%		\fi
+%	},
+%}
+
 
  %%%%%%%%%%%%  Set Depths for Sections  %%%%%%%%%%%%%%
 
@@ -90,7 +110,7 @@ headheight=1in]{geometry}
 
 \renewlist{itemize}{itemize}{9}
 		\setlist[itemize]{label=$\cdot$}
-		\setlist[itemize,1]{label=\textbullet}
+		\setlist[itemize,1]{label={--}}
 		\setlist[itemize,2]{label=$\circ$}
 		\setlist[itemize,3]{label=$\ast$}
 		\setlist[itemize,4]{label=$\dagger$}
@@ -123,17 +143,21 @@ headheight=1in]{geometry}
 	{\parindent \z@ \raggedright \normalfont
 		\ifnum \c@secnumdepth >\m@ne
 		\if@mainmatter
-		%\huge\bfseries \@chapapp\space \thechapter
 		\Huge\bfseries \thechapter.\space%
 		%\par\nobreak
 		%\vskip 20\p@
 		\fi
-		\fi
-		\interlinepenalty\@M
-		\Huge \bfseries #1\par\nobreak
+		%
+		\Huge \bfseries \uppercase{#1}\par\nobreak
 		\vskip 40\p@
+		
+	
 }}
 \makeatother
+
+
+
+
 
 \usepackage{titlesec}
 
@@ -148,6 +172,7 @@ headheight=1in]{geometry}
 \newcommand{\naslov}{Tko pije, a tko plaća na neaktivnom gradilištu?}
 \newcommand{\JMBAG} {000111222}
 \newcommand{\vrsta}{Završni rad} % ili Diplomski
+
 
 
 

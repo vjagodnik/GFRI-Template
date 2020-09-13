@@ -1,8 +1,9 @@
 \babel@toc {croatian}{}
 \contentsline {chapter}{Popis slika}{iii}{chapter*.1}%
-\contentsline {chapter}{\numberline {1}rand}{1}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Poglavlje 2}{3}{chapter.2}%
-\contentsline {chapter}{\numberline {3}title}{5}{chapter.3}%
+\contentsline {chapter}{Popis tablica}{v}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}\uppercase {rand}}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}\uppercase {Poglavlje 2}}{3}{chapter.2}%
+\contentsline {chapter}{\numberline {3}\uppercase {title}}{5}{chapter.3}%
 \contentsline {section}{\numberline {3.1}title}{6}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}\textit {title}}{6}{subsection.3.1.1}%
 \contentsline {chapter}{\textbf {Literatura}}{11}{section*.7}%

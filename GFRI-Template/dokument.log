@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.18)  22 JUL 2020 18:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.18)  13 SEP 2020 19:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1164,17 +1164,24 @@ Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
 (/usr/local/texlive/2020/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
 File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
 ))
-\c@enumv=\count334
-\c@enumvi=\count335
-\c@enumvii=\count336
-\c@enumviii=\count337
-\c@enumix=\count338
+(/usr/local/texlive/2020/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip95
+\bibsep=\skip96
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count334
+)
+\c@enumv=\count335
+\c@enumvi=\count336
+\c@enumvii=\count337
+\c@enumviii=\count338
+\c@enumix=\count339
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \ttl@box=\box140
-\beforetitleunit=\skip95
-\aftertitleunit=\skip96
+\beforetitleunit=\skip97
+\aftertitleunit=\skip98
 \ttl@plus=\dimen317
 \ttl@minus=\dimen318
 \ttl@toksa=\toks52
@@ -1233,16 +1240,16 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count339
+\scratchcounter=\count340
 \scratchdimen=\dimen322
 \scratchbox=\box141
-\nofMPsegments=\count340
-\nofMParguments=\count341
+\nofMPsegments=\count341
+\nofMParguments=\count342
 \everyMPshowfont=\toks53
-\MPscratchCnt=\count342
+\MPscratchCnt=\count343
 \MPscratchDim=\dimen323
-\MPnumerator=\count343
-\makeMPintoPDFobject=\count344
+\MPnumerator=\count344
+\makeMPintoPDFobject=\count345
 \everyMPtoPDFconversion=\toks54
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1281,7 +1288,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count345
+\c@section@level=\count346
 )
 LaTeX Info: Redefining \ref on input line 11.
 LaTeX Info: Redefining \pageref on input line 11.
@@ -1372,7 +1379,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 100--101
- []\T1/ptm/b/n/12 Rijeka, 22. sr-p-nja 2020. 
+ []\T1/ptm/b/n/12 Rijeka, 13. rujna 2020. 
  []
 
 [1
@@ -1384,116 +1391,129 @@ Overfull \hbox (16.27794pt too wide) in paragraph at lines 132--133
 u-rad-nji s men-to-rom/mentoricom
  []
 
-[3]) [1] [2
-
-] (./dokument.toc
+[3]) (./Poglavlja/zahvale.tex) [4] (./Poglavlja/sazetak.tex) (./dokument.toc
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 6.
+ 7.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 6.
+ 7.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 6.
+ 7.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 6.
+ 7.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 6.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 7.
 
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 6
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 7
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyb on input line 6
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 7
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 6
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 7
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 6
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 7
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 6
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 7
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 6.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 7.
 
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
 )
 \tf@toc=\write5
 \openout5 = `dokument.toc'.
 
- [3] [4
+ [1
+
+
+
+] [2
 
 ]
 (./dokument.lof)
 \tf@lof=\write6
 \openout6 = `dokument.lof'.
 
- [5] [6
+ [3
+
+] [4
 
 ] (./dokument.lot)
 \tf@lot=\write7
 \openout7 = `dokument.lot'.
 
- [7] (./Poglavlja/poglavlje1.tex
-[8
+ [5
 
-
-]
+] (./Poglavlja/poglavlje1.tex
 Poglavlje 1.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\uppercase' on input line 1.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.7 
-     [1])pdfTeX warning (ext4): destination with the same identifier (name{page
-.2}) has been already used, duplicate ignored
+     [1
+
+
+])pdfTeX warning (ext4): destination with the same identifier (name{page.2}) ha
+s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.33 \cleardoublepage
+l.45 \cleardoublepage
                       [2] (./Poglavlja/poglavlje2.tex
 Poglavlje 2.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\uppercase' on input line 1.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -1502,8 +1522,17 @@ l.26 \lipsum[1-3] \cite
                        {Massoudi2001} [3
 
 
-]) [4] (./Poglavlja/poglavlje3.tex
+])pdfTeX warning (ext4): destination with the same identifier (name{page.4}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.47 \cleardoublepage
+                      [4] (./Poglavlja/poglavlje3.tex
 Poglavlje 3.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\uppercase' on input line 1.
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1511,14 +1540,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-<Slike/2dtrans.jpg, id=146, 845.1575pt x 550.055pt>
+<Slike/2dtrans.jpg, id=141, 845.1575pt x 550.055pt>
 File: Slike/2dtrans.jpg Graphic file (type jpg)
 <use Slike/2dtrans.jpg>
 Package pdftex.def Info: Slike/2dtrans.jpg  used on input line 12.
 (pdftex.def)             Requested size: 291.78174pt x 189.90346pt.
 
 [6]
-<Slike/assembly.jpg, id=152, 337.26pt x 359.09157pt>
+<Slike/assembly.jpg, id=147, 337.26pt x 359.09157pt>
 File: Slike/assembly.jpg Graphic file (type jpg)
 <use Slike/assembly.jpg>
 Package pdftex.def Info: Slike/assembly.jpg  used on input line 25.
@@ -1529,58 +1558,44 @@ Underfull \vbox (badness 1308) has occurred while \output is active []
  [8 <./Slike/assembly.jpg>] [9] [10
 
 ] (./dokument.bbl
-Underfull \hbox (badness 2617) in paragraph at lines 4--9
-[]\T1/ptm/m/n/12 Peiris A, Yo-shida N.  Di-la-tancy Cha-rac-te-ris-tics Of Sand
-.  WIT Tran-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--9
-\T1/ptm/m/n/12 sac-ti-ons on The Bu-ilt Envi-ron-ment. 1970 jan;15.  Ava-ila-bl
-e from:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--9
+Underfull \hbox (badness 10000) in paragraph at lines 9--15
 []$\T1/ptm/m/n/12 https : / / www . witpress . com / elibrary / wit-[]transacti
-ons-[]on-[]the-[]built-[]environment /
- []
-
-
-Underfull \hbox (badness 1852) in paragraph at lines 11--16
-[]\T1/ptm/m/n/12 Massoudi M, Me-hra-badi MM.  A con-ti-nuum mo-del for gra-nu-l
-ar ma-te-ri-
+ons-[]on-[]the-[]built-[]environment / 15 /
  []
 
 ) [11
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 48.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 48.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 61.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
  (./dokument.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 48.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 48.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 61.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 61.
 Package rerunfilecheck Info: File `dokument.out' has not changed.
-(rerunfilecheck)             Checksum: 0E8CD70D2AEB16D54FBEFB73166F842E;327.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 48.
- ) 
+(rerunfilecheck)             Checksum: 62D4356DAA5FD99CED26526B0F2197AD;376.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 61.
+ )
+(\end occurred when \iffalse on line 1 was incomplete)
+(\end occurred when \iffalse on line 1 was incomplete)
+(\end occurred when \iffalse on line 1 was incomplete) 
 Here is how much of TeX's memory you used:
- 26772 strings out of 480608
- 510511 string characters out of 5903630
- 1063935 words of memory out of 5000000
- 41966 multiletter control sequences out of 15000+600000
+ 27105 strings out of 480608
+ 514634 string characters out of 5903630
+ 1069482 words of memory out of 5000000
+ 42291 multiletter control sequences out of 15000+600000
  576069 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,11n,85p,435b,370s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/202
-0/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2020/texmf-d
-ist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/
-type1/urw/times/utmri8a.pfb>
-Output written on dokument.pdf (22 pages, 244038 bytes).
+ 63i,9n,85p,435b,370s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/
+texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2020/texmf-dist/font
+s/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/ur
+w/times/utmbi8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/u
+tmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
+>
+Output written on dokument.pdf (20 pages, 247752 bytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
- 168 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
- 175 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 209 PDF objects out of 1000 (max. 8388607)
+ 163 compressed objects within 2 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 183 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -12,22 +12,34 @@
 
 \input{./naslovnica.tex}
 
+\pagestyle{empty}
+\input{./Poglavlja/zahvale}
+
+\cleardoublepage
+
+
 \pagenumbering{roman}
 \setcounter{page}{1}
 
+\input{./Poglavlja/sazetak}
+
+\cleardoublepage
+\setcounter{page}{1}
+
 \tableofcontents
+\cleardoublepage
 
-%\vspace{\baselineskip}
-\addcontentsline{toc}{chapter}{\listfigurename}
-\listoffigures
+\addcontentsline{toc}{chapter}{\listfigurename}\listoffigures
 
-%\vspace{\baselineskip}
-%\addcontentsline{toc}{chapter}{\listoftables}
-\listoftables
+\cleardoublepage
+\addcontentsline{toc}{chapter}{\listtablename}\listoftables
+
 
 \clearpage
-%\pagenumbering{arabic}
-%\setcounter{page}{1}
+
+\pagenumbering{arabic}
+\pagestyle{plain}
+\setcounter{page}{1}
 
 \input{./Poglavlja/poglavlje1.tex}
 \cleardoublepage
@@ -40,10 +52,9 @@
 %\printbibliography
 \vspace{\baselineskip}
 %\label{Bibliography}
+\renewcommand{\bibname}{\uppercase{Literatura}}
 \addcontentsline{toc}{chapter}{\textbf{Literatura}}
-%%%%%%%%%%%%%%%%%%%% Title of bibliography %%%%%%%%%%%%%%%%%%%%
-\renewcommand{\bibname}{Literatura}
-%\bibliographystyle{unsrtnat}
+\bibliographystyle{unsrtnat-GFRI}
 %\bibliographystyle{ksfh_nat}
 \bibliography{bibliography}
 \bibliographystyle{vancouver}
