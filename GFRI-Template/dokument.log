@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.15)  26 JUL 2021 18:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.15)  30 JUL 2021 19:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1379,7 +1379,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 100--101
- []\T1/ptm/b/n/12 Rijeka, 26. sr-p-nja 2021. 
+ []\T1/ptm/b/n/12 Rijeka, 30. sr-p-nja 2021. 
  []
 
 [1
@@ -1592,7 +1592,7 @@ s/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/ur
 w/times/utmbi8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/u
 tmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
 >
-Output written on dokument.pdf (20 pages, 247984 bytes).
+Output written on dokument.pdf (20 pages, 247818 bytes).
 PDF statistics:
  209 PDF objects out of 1000 (max. 8388607)
  163 compressed objects within 2 object streams
