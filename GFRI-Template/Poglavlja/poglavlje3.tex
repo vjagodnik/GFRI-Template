@@ -30,3 +30,59 @@
 
 \lipsum[1-3] \cite{Gutierrez2009,doi:10.1680/geot.1986.36.1.65,krahn}
 \lipsum[1-3]
+
+\begin{figure}
+	\begin{tikzpicture}% table
+\begin{axis}[
+xlabel=$D_{p,min}$,
+ylabel=$\eta_{max}$,
+width = 0.9 \textwidth,
+height = 0.7 \textwidth,
+legend pos = south east,
+grid =  both,
+xmin = -0.8,
+xmax = 0.2,
+ymin = 0.8,
+ymax = 1.6,
+x dir = reverse,
+legend style = {font = \footnotesize},
+]
+\addplot [domain = -1:0.2, thick, dashed, line width = 1.5 pt,color = black, legend entry = ${M = 1.345}$] {1.345 - 0.3*x};
+\addplot [only marks, color = black] table[x=dminC,y=etamaxC, col sep = tab] {./dataset/etadil.txt};
+\addplot [thin, color = black, dashed,mark = none, legend entry = \citep{cornforth1961plane} ] coordinates {
+(0,1.2602)
+(-0.8,1.763)
+};
+%
+\addlegendimage{empty legend};
+\addlegendentry{\citep{jeffShut}};
+\addlegendimage{empty legend};
+\addlegendentry{\citep{vaid1992strength}};
+\addplot [thin, color = black,dashed, mark = none,% legend entry = ${[60],[61]}$
+] coordinates {
+	(0,1.267)
+	(-0.7502,1.8)
+};
+
+\addplot [domain = 0:0.2,dotted] {-0.708777*x+1.267};
+\addplot [domain = 0:0.2,dotted] {-0.6285*x+1.2602};
+%
+\addplot+[name path = A, mark = none]coordinates {
+(0.2,1.22)
+(-0.8,1.52)
+};		%old
+\addplot+[name path = B, mark = none]{-0.3*x+1.41};		%old unfit
+\addplot[gray!50,opacity = 0.3, legend entry = Data Range] fill between[of=A and B];
+
+\draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt}]
+(axis cs:0.2,1.125) -- (axis cs:0,1.2602) node [black,midway,xshift=50 pt, yshift = -12 pt] {\footnotesize
+	Assumed extensions };
+\node [font = \footnotesize] at (axis cs: -0.07,1.10) {according to: };
+\node [font = \footnotesize, fill = white] at (axis cs:-0.05,1.05) {  \citep{cornforth1961plane}};
+\node [font = \footnotesize, fill = white] at (axis cs:-0.05,1.00) {  \citep{jeffShut}};
+\node [font = \footnotesize, fill = white] at (axis cs:-0.05,0.950) {  \citep{vaid1992strength}};
+
+\end{axis}
+
+\end{tikzpicture}
+\end{figure}

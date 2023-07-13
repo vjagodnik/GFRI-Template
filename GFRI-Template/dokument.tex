@@ -1,22 +1,31 @@
 %%%%%%%%%%%%   %%%%%%%%%%%%%%
-
-%%%%%%%%%%%%    %%%%%%%%%%%%%%
-
-\documentclass[12pt]{book}
+\documentclass[12pt,onesided]{book}
 
 \input{./struktura.tex}
 
 \onehalfspacing
 
+%%%%%%%%%%%%%%%%%%%% Document code starts here %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% Enter the data %%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\autor} {Fredrik Lamb}
+\newcommand{\studij} {Preddiplomski sveučilišni}
+\newcommand{\smjer} {Pozitivan}
+\newcommand{\kolegij} {Filozofija građevinarstva}
+\newcommand{\naslov}{Tko pije, a tko plaća na neaktivnom gradilištu?}
+\newcommand{\JMBAG} {000111222}
+\newcommand{\vrsta}{Završni rad} % ili Diplomski
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
 \input{./naslovnica.tex}
+\input{./izjava.tex}
 
 \pagestyle{empty}
 \input{./Poglavlja/zahvale}
 
 \cleardoublepage
-
 
 \pagenumbering{roman}
 \setcounter{page}{1}
@@ -29,14 +38,12 @@
 \tableofcontents
 \cleardoublepage
 
-
 \listoffigures
 \addcontentsline{toc}{chapter}{\listfigurename}
 
 \cleardoublepage
 \listoftables
 \addcontentsline{toc}{chapter}{\listtablename}
-
 
 \clearpage
 
@@ -58,7 +65,6 @@
 \renewcommand{\bibname}{\uppercase{Literatura}}
 \addcontentsline{toc}{chapter}{\textbf{Literatura}}
 \bibliographystyle{unsrtnat-GFRI}
-%\bibliographystyle{ksfh_nat}
 \bibliography{bibliography}
 \bibliographystyle{vancouver}
 \end{document}
