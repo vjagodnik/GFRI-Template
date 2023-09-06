@@ -89,7 +89,8 @@ Aktivna linija 154 omogućava pozicioniranje broja stranice desno za jednostrano
 
 U sklopu predloška moguće je koristiti tzv. "track changes". Opcija je omogućena pozivom na paket "trackchanges.sty". Dodatne upute možete pronaći na poveznici ![trackchanges]{https://trackchanges.sourceforge.net}.
 
-Izmjene se vrše u linijama 181 i 182 dokumenta "struktura.tex" na način da se unesu "editori" ili kao inicijali ili kao puna imena (svakako bez razmaka).
+Izmjene se vrše u linijama 180, 181 i 182 dokumenta "struktura.tex" na način da se omogući korištenje **trackchanges** opcije (linija 180) te da se unesu "editori" ili kao inicijali ili kao puna imena (svakako bez razmaka). 
+
 ```tex
 \addeditor{VJ}
 \addeditor{VF}
