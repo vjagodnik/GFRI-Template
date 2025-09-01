@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{9}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -41,5 +41,32 @@ Bolton, M~D.
 Krahn, J.
 \newblock Stress and deformation modeling with sigma-w.
 \newblock Technical report, GEO-SLOPE International Ltd, Alberta, Canada, 2004.
+
+\bibitem[Cornforth(1961)]{cornforth1961plane}
+Cornforth, Derek~Harland.
+\newblock \emph{Plane strain failure characteristics of saturated sand}.
+\newblock PhD thesis, Imperial College London, 1961.
+
+\bibitem[Jefferies and Shuttle(2002)]{jeffShut}
+Jefferies, M.~G. and Shuttle, D.~A.
+\newblock Dilatancy in general cambridge-type models.
+\newblock \emph{Géotechnique}, 52\penalty0 (9):\penalty0 625--638, 2002.
+\newblock \doi{10.1680/geot.2002.52.9.625}.
+\newblock URL \url{https://doi.org/10.1680/geot.2002.52.9.625}.
+
+\bibitem[Vaid and Sasitharan(1992)]{vaid1992strength}
+Vaid, YP and Sasitharan, S.
+\newblock The strength and dilatancy of sand.
+\newblock \emph{Canadian Geotechnical Journal}, 29\penalty0 (3):\penalty0
+  522--526, 1992.
+
+\bibitem[Been and Jefferies(2004)]{Been2004}
+Been, Ken and Jefferies, Michael.
+\newblock {Stress-dilatancy in very loose sand}.
+\newblock \emph{Canadian Geotechnical Journal}, 41\penalty0 (5):\penalty0
+  972--989, sep 2004.
+\newblock ISSN 0008-3674.
+\newblock \doi{10.1139/t04-038}.
+\newblock URL \url{https://doi.org/10.1139/t04-038}.
 
 \end{thebibliography}
