@@ -1,0 +1,91 @@
+%%%%%%%%%%%%   %%%%%%%%%%%%%%
+\documentclass[12pt,onesided]{book}
+
+\input{./struktura.tex}
+
+\onehalfspacing
+
+%%%%%%%%%%%%%%%%%%%% Document code starts here %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% Enter the data %%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\autor} {Fredrik Lamb}
+\newcommand{\studij} {Preddiplomski sveučilišni}
+\newcommand{\smjer} {Pozitivan}
+\newcommand{\kolegij} {Filozofija građevinarstva}
+\newcommand{\naslov}{Tko pije, a tko plaća na neaktivnom gradilištu?}
+\newcommand{\JMBAG} {000111222}
+\newcommand{\vrsta}{Završni rad } % ili Diplomski
+%----------------------------------------------------------------------------------------
+%	PODATCI O PROJEKTU
+\newcommand{\projekt}{Naziv projekta}
+\newcommand{\voditeljProjekta}{Djuro Matheu}
+\newcommand{\sifraProjeka}{123123}
+\newcommand{\moneyProjekta}{Sveučilište u Rijeci}
+\newcommand{\nadleznostProjeka}{Republika Hrvatska}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{environ}
+
+% Remove figures and tables completely
+\RenewEnviron{figure}{}  % everything inside figure is ignored
+\RenewEnviron{table}{}   % everything inside table is ignored
+
+% Remove captions (works for optional argument too)
+\long\def\caption#1[#2]#3{}
+\long\def\caption#1{}  
+
+% Remove labels
+\renewcommand{\label}[1]{}
+
+\begin{document}
+%
+%\input{./naslovnica.tex}
+%\input{./izjava.tex}
+%\input{./izjava_projekt.tex}
+%\pagestyle{empty}
+%\input{./Poglavlja/zahvale}
+%
+%\cleardoublepage
+%
+%\pagenumbering{roman}
+%\setcounter{page}{1}
+%
+%\input{./Poglavlja/sazetak}
+%
+%\cleardoublepage
+%\setcounter{page}{1}
+%
+%\tableofcontents
+%\cleardoublepage
+%
+%\listoffigures
+%\addcontentsline{toc}{chapter}{\listfigurename}
+%
+%\cleardoublepage
+%\listoftables
+%\addcontentsline{toc}{chapter}{\listtablename}
+%
+%\clearpage
+
+\pagenumbering{arabic}
+\pagestyle{plain}
+\setcounter{page}{1}
+
+\input{./Poglavlja/poglavlje1.tex}
+\cleardoublepage
+\input{./Poglavlja/poglavlje2.tex}
+\cleardoublepage
+\input{./Poglavlja/poglavlje3.tex}
+
+Hello, 
+this is the end of my tex file
+\cleardoublepage\phantomsection
+
+%\printbibliography
+\vspace{\baselineskip}
+%\label{Bibliography}
+\renewcommand{\bibname}{\uppercase{Literatura}}
+\addcontentsline{toc}{chapter}{\textbf{Literatura}}
+\bibliographystyle{empty} % <-- Change this line to "empty"
+\bibliography{bibliography} % This line is still necessary for the citations!
+%\bibliographystyle{vancouver}
+\end{document}
