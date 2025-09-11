@@ -29,6 +29,13 @@ U mapi pod naslovom "dataset" postavljaju se podatci za grafičku obradu i izrad
 - strutura.tex - dokument koji sadrži većinu potrebnih paketa za uspješno generiranje dokumenta,
 - dokument.tex - osnovni dokument za kompiliranje završnog/diplomskog rada.
 
+Ukoliko je rad napravljen u sklopu istraživačkog projekta, potrebno je aktivirati određene linije u datoteci "dokument.tex":
+- linije 20 - 24: detalji projekta
+- linija 30: aktiviranje datoteke "izjava_projekt.tex"
+
+Više o izmjenama u podpoglavlju "Izmjene u dokumentu 'dokument.tex'".
+
+
 # Redoslijed 
 
 Student nužno izmjenjuje samo slijedeće dokumente:
@@ -57,8 +64,19 @@ Kandidat u dokumentu "dokument.tex" imjenjuje linije kôda 11 - 17 te upisuje od
 \newcommand{\kolegij} {Filozofija građevinarstva}
 \newcommand{\naslov}{Tko pije, a tko plaća na neaktivnom gradilištu?}
 \newcommand{\JMBAG} {000111222}
-\newcommand{\vrsta}{Završni rad} % ili Diplomski
+\newcommand{\vrsta}{Završni rad } % ili Diplomski
 ```
+
+Ukoliko je rad izrađen u sklopu istraživačkog projekta, potrebno je izmjeniti linije 20 - 24 te unijeti odgovarajuće podatke o projektu.
+
+```tex
+\newcommand{\projekt}{Naziv projekta}
+\newcommand{\voditeljProjekta}{Djuro Matheu}
+\newcommand{\sifraProjeka}{123123}
+\newcommand{\moneyProjekta}{Sveučilište u Rijeci}
+\newcommand{\nadleznostProjeka}{Republika Hrvatska}
+```
+
 
 Kandidat po potrebi dodaje nove linije nakon linije 59, na način:
 
