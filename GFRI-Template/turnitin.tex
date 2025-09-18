@@ -1,0 +1,133 @@
+%%%%%%%%%%%%   %%%%%%%%%%%%%%
+\documentclass[12pt,onesided]{book}
+
+\input{./struktura.tex}
+
+\onehalfspacing
+
+%%%%%%%%%%%%%%%%%%%% Document code starts here %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% Enter the data %%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\autor} {Fredrik Lamb}
+\newcommand{\studij} {Preddiplomski sveučilišni}
+\newcommand{\smjer} {Pozitivan}
+\newcommand{\kolegij} {Filozofija građevinarstva}
+\newcommand{\naslov}{Tko pije, a tko plaća na neaktivnom gradilištu?}
+\newcommand{\JMBAG} {000111222}
+\newcommand{\vrsta}{Završni rad } % ili Diplomski
+%----------------------------------------------------------------------------------------
+%	PODATCI O PROJEKTU
+\newcommand{\projekt}{Naziv projekta}
+\newcommand{\voditeljProjekta}{Djuro Matheu}
+\newcommand{\sifraProjeka}{123123}
+\newcommand{\moneyProjekta}{Sveučilište u Rijeci}
+\newcommand{\nadleznostProjeka}{Republika Hrvatska}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%			labels and captions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\usepackage{environ}
+
+%
+\makeatletter
+\newcommand{\DiscardFloat}[1]{%
+	\RenewEnviron{#1}{%
+		\begingroup
+		\renewcommand{\caption}[2][]{\refstepcounter{#1}}%
+		\setbox0=\vbox{\BODY}%
+		\endgroup
+	}%
+}
+\DiscardFloat{figure}
+\DiscardFloat{table}
+\makeatother
+
+% --- reuse labels from A.aux ---
+\makeatletter
+\InputIfFileExists{dokument.aux}{}{}
+\makeatother
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%			bibliography
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\makeatletter
+% Save the original commands
+\let\original@thebibliography\thebibliography
+\let\original@endthebibliography\endthebibliography
+
+% Redefine the bibliography environment to be completely empty
+\renewenvironment{thebibliography}[1]
+{\original@thebibliography{#1}% Start the environment
+	\setbox0\vbox\bgroup% Begin capturing content (but discard it)
+}
+{\egroup% End capturing
+	\original@endthebibliography% Properly end the environment
+}
+\makeatother
+
+
+
+
+
+
+\begin{document}
+
+%\input{./naslovnica.tex}
+%\input{./izjava.tex}
+%\input{./izjava_projekt.tex}
+%\pagestyle{empty}
+%\input{./Poglavlja/zahvale}
+%
+%\cleardoublepage
+%
+%\pagenumbering{roman}
+%\setcounter{page}{1}
+%
+%\input{./Poglavlja/sazetak}
+%
+%\cleardoublepage
+%\setcounter{page}{1}
+%
+%\tableofcontents
+%\cleardoublepage
+%
+%\listoffigures
+%\addcontentsline{toc}{chapter}{\listfigurename}
+%
+%\cleardoublepage
+%\listoftables
+%\addcontentsline{toc}{chapter}{\listtablename}
+
+\clearpage
+
+\pagenumbering{arabic}
+\pagestyle{plain}
+\setcounter{page}{1}
+
+\input{./Poglavlja/poglavlje1.tex}
+\cleardoublepage
+\input{./Poglavlja/poglavlje2.tex}
+\cleardoublepage
+\input{./Poglavlja/poglavlje3.tex}
+
+\cleardoublepage\phantomsection
+
+% Remove bibliography title and TOC entry
+\renewcommand{\bibname}{}   % no "Literatura"
+\renewcommand{\refname}{}   % covers other classes
+%\addcontentsline{toc}{chapter}{\textbf{Literatura}}
+
+\bibliographystyle{unsrtnat-GFRI}
+\bibliography{bibliography}
+
+% ============================
+\end{document}
