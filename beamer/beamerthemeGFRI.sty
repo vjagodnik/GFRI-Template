@@ -1,0 +1,241 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{beamerthemeGFRI}[2026/09/10 GFRI Beamer theme]
+
+\RequirePackage{etoolbox}
+\RequirePackage{graphicx}
+\RequirePackage{iftex}
+\RequirePackage{tikz}
+\usetikzlibrary{calc}
+
+\ifPDFTeX
+  \RequirePackage[T1]{fontenc}
+  \RequirePackage[utf8]{inputenc}
+  \RequirePackage{lmodern}
+\else
+  \RequirePackage{fontspec}
+  \setsansfont{TeX Gyre Heros}
+\fi
+
+\mode<presentation>
+
+% -----------------------------------------------------------------------------
+% Logotipi
+% GF logo je obvezan. Dva partnerska logotipa mogu se zasebno uključiti.
+% -----------------------------------------------------------------------------
+\newcommand{\GFRImainlogofile}{gflogo.pdf}
+\newcommand{\GFRIpartnerAfile}{}
+\newcommand{\GFRIpartnerBfile}{}
+
+\newif\ifGFRIpartnerA
+\newif\ifGFRIpartnerB
+\GFRIpartnerAfalse
+\GFRIpartnerBfalse
+
+\newcommand{\GFRIsetmainlogo}[1]{\renewcommand{\GFRImainlogofile}{#1}}
+\newcommand{\GFRIsetpartnerlogoA}[1]{\renewcommand{\GFRIpartnerAfile}{#1}}
+\newcommand{\GFRIsetpartnerlogoB}[1]{\renewcommand{\GFRIpartnerBfile}{#1}}
+
+\newcommand{\GFRIshowpartnerlogoA}{\GFRIpartnerAtrue}
+\newcommand{\GFRIhidepartnerlogoA}{\GFRIpartnerAfalse}
+\newcommand{\GFRIshowpartnerlogoB}{\GFRIpartnerBtrue}
+\newcommand{\GFRIhidepartnerlogoB}{\GFRIpartnerBfalse}
+
+\newcommand{\GFRIincludeGFLogo}[1]{%
+  \IfFileExists{\GFRImainlogofile}{%
+    \includegraphics[pagebox=cropbox,height=#1]{\GFRImainlogofile}%
+  }{%
+    \PackageError{beamerthemeGFRI}%
+      {Obvezni GF logo nije pronaden: \GFRImainlogofile}%
+      {Dodajte gflogo.pdf ili promijenite putanju naredbom \string\GFRIsetmainlogo.}%
+  }%
+}
+
+\newcommand{\GFRIincludePartnerA}[1]{%
+  \ifGFRIpartnerA
+    \ifdefempty{\GFRIpartnerAfile}{}{%
+      \IfFileExists{\GFRIpartnerAfile}{%
+        \includegraphics[height=#1,width=1.55cm,keepaspectratio]{\GFRIpartnerAfile}%
+      }{%
+        \PackageWarning{beamerthemeGFRI}%
+          {Partnerski logo A nije pronaden: \GFRIpartnerAfile}%
+      }%
+    }%
+  \fi
+}
+
+\newcommand{\GFRIincludePartnerB}[1]{%
+  \ifGFRIpartnerB
+    \ifdefempty{\GFRIpartnerBfile}{}{%
+      \IfFileExists{\GFRIpartnerBfile}{%
+        \includegraphics[height=#1,width=1.55cm,keepaspectratio]{\GFRIpartnerBfile}%
+      }{%
+        \PackageWarning{beamerthemeGFRI}%
+          {Partnerski logo B nije pronaden: \GFRIpartnerBfile}%
+      }%
+    }%
+  \fi
+}
+
+\newcommand{\GFRIpartnerlogos}[1]{%
+  \GFRIincludePartnerA{#1}%
+  \ifGFRIpartnerA\ifGFRIpartnerB\hspace{0.32cm}\fi\fi
+  \GFRIincludePartnerB{#1}%
+}
+
+% -----------------------------------------------------------------------------
+% Boje i tipografija
+% -----------------------------------------------------------------------------
+\definecolor{GFRIInk}{HTML}{111111}
+\definecolor{GFRISlate}{HTML}{666666}
+\definecolor{GFRIAccent}{HTML}{111111}
+\definecolor{GFRIPale}{HTML}{F1F1F1}
+\definecolor{GFRILine}{HTML}{D5D5D5}
+
+\usefonttheme{professionalfonts}
+\setbeamercolor{normal text}{fg=GFRIInk,bg=white}
+\setbeamercolor{structure}{fg=GFRIAccent}
+\setbeamercolor{alerted text}{fg=GFRIAccent}
+\setbeamercolor{frametitle}{fg=GFRIInk,bg=white}
+\setbeamercolor{footline}{fg=GFRISlate,bg=white}
+\setbeamercolor{block title}{fg=white,bg=GFRIInk}
+\setbeamercolor{block body}{fg=GFRIInk,bg=GFRIPale}
+\setbeamercolor{block title alerted}{fg=white,bg=GFRIAccent}
+\setbeamercolor{block body alerted}{fg=GFRIInk,bg=GFRIPale}
+
+\setbeamerfont{title}{size=\fontsize{28}{32}\selectfont,series=\bfseries}
+\setbeamerfont{subtitle}{size=\fontsize{15}{19}\selectfont}
+\setbeamerfont{author}{size=\normalsize,series=\bfseries}
+\setbeamerfont{institute}{size=\small}
+\setbeamerfont{date}{size=\small}
+\setbeamerfont{frametitle}{size=\fontsize{21}{25}\selectfont,series=\bfseries}
+\setbeamerfont{framesubtitle}{size=\normalsize,series=\mdseries}
+\setbeamerfont{footline}{size=\scriptsize}
+\setbeamerfont{section title}{size=\fontsize{27}{32}\selectfont,series=\bfseries}
+\setbeamerfont{block title}{series=\bfseries}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize item}{\raise0.15ex\hbox{\color{GFRIAccent}\small\textbullet}}
+\setbeamertemplate{itemize subitem}{\raise0.15ex\hbox{\color{GFRISlate}\scriptsize\textbullet}}
+\setbeamertemplate{enumerate item}{\color{GFRIAccent}\insertenumlabel.}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+
+% Traka napretka prikazuje udio trenutnog slajda u ukupnom broju slajdova.
+\newdimen\GFRIprogresswidth
+\newcommand{\GFRIprogressbar}{%
+  \pgfmathsetlength{\GFRIprogresswidth}%
+    {\paperwidth*\insertframenumber/\inserttotalframenumber}%
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[GFRILine]
+      (current page.south west) rectangle
+      ($(current page.south east)+(0,0.075cm)$);
+    \fill[GFRIInk]
+      (current page.south west) rectangle
+      ($(current page.south west)+(\GFRIprogresswidth,0.075cm)$);
+  \end{tikzpicture}%
+}
+
+% -----------------------------------------------------------------------------
+% Naslovni slajd
+% -----------------------------------------------------------------------------
+\setbeamertemplate{title page}{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[GFRIAccent]
+      (current page.north west) rectangle
+      ($(current page.north east)+(0,-0.08cm)$);
+    \node[anchor=north west,inner sep=0pt]
+      at ($(current page.north west)+(0.72cm,-0.62cm)$)
+      {\GFRIincludeGFLogo{1.02cm}};
+    \node[anchor=south east,inner sep=0pt]
+      at ($(current page.south east)+(-0.72cm,0.52cm)$)
+      {\GFRIpartnerlogos{0.72cm}};
+    \node[anchor=west,inner sep=0pt,text width=0.86\paperwidth]
+      at ($(current page.west)+(0.72cm,0.26cm)$)
+      {%
+        \begin{minipage}{\linewidth}
+          {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}
+          \ifx\insertsubtitle\@empty\else
+            \vspace{0.25cm}
+            {\usebeamerfont{subtitle}\color{GFRISlate}\insertsubtitle\par}
+          \fi
+          \vspace{0.47cm}
+          {\color{GFRIAccent}\rule{2.25cm}{1.2pt}\par}
+          \vspace{0.47cm}
+          {\usebeamerfont{author}\insertauthor\par}
+          \vspace{0.09cm}
+          {\usebeamerfont{institute}\color{GFRISlate}\insertinstitute\par}
+          \vspace{0.08cm}
+          {\usebeamerfont{date}\color{GFRISlate}\insertdate\par}
+        \end{minipage}%
+      };
+  \end{tikzpicture}%
+  \GFRIprogressbar
+}
+
+% -----------------------------------------------------------------------------
+% Naslovi, sekcije i podnožje
+% -----------------------------------------------------------------------------
+\setbeamertemplate{frametitle}{%
+  \nointerlineskip
+  \begin{beamercolorbox}[
+    wd=\paperwidth,
+    ht=1.05cm,
+    dp=0.24cm,
+    leftskip=0.66cm,
+    rightskip=0.66cm
+  ]{frametitle}
+    \usebeamerfont{frametitle}\insertframetitle
+    \ifx\insertframesubtitle\@empty\else
+      \hspace{0.25cm}{\usebeamerfont{framesubtitle}\color{GFRISlate}\insertframesubtitle}
+    \fi
+  \end{beamercolorbox}%
+  \hspace{0.66cm}{\color{GFRIAccent}\rule{1.55cm}{1.1pt}}%
+  \vspace{0.10cm}
+}
+
+\setbeamertemplate{section page}{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[white] (current page.south west) rectangle (current page.north east);
+    \fill[GFRIAccent]
+      (current page.north west) rectangle
+      ($(current page.north east)+(0,-0.08cm)$);
+    \node[anchor=north west,inner sep=0pt]
+      at ($(current page.north west)+(0.72cm,-0.62cm)$)
+      {\GFRIincludeGFLogo{0.85cm}};
+    \node[anchor=south east,inner sep=0pt]
+      at ($(current page.south east)+(-0.72cm,0.52cm)$)
+      {\GFRIpartnerlogos{0.60cm}};
+    \node[anchor=west,inner sep=0pt,text width=0.82\paperwidth]
+      at ($(current page.west)+(0.72cm,0.10cm)$)
+      {%
+        {\color{GFRIAccent}\rule{1.50cm}{1.3pt}\par}
+        \vspace{0.32cm}
+        {\usebeamerfont{section title}\color{GFRIInk}\insertsection\par}%
+      };
+  \end{tikzpicture}%
+  \GFRIprogressbar
+}
+
+\setbeamertemplate{footline}{%
+  \leavevmode
+  \begin{beamercolorbox}[
+    wd=\paperwidth,
+    ht=0.69cm,
+    dp=0.18cm,
+    leftskip=0.58cm,
+    rightskip=0.58cm
+  ]{footline}
+    \GFRIincludeGFLogo{0.47cm}%
+    \hspace{0.38cm}%
+    \GFRIpartnerlogos{0.39cm}%
+    \hfill
+    \usebeamerfont{footline}%
+    \ifx\insertsectionhead\@empty\else\insertsectionhead\hspace{0.45cm}\fi
+    \insertframenumber\,/\,\inserttotalframenumber
+  \end{beamercolorbox}%
+  \GFRIprogressbar
+}
+
+\setbeamersize{text margin left=0.66cm,text margin right=0.66cm}
+
+\mode<all>
