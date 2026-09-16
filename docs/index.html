@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="LaTeX predlošci i alati za završne i diplomske radove te Beamer prezentacije Građevinskog fakulteta Sveučilišta u Rijeci.">
+    <meta name="theme-color" content="#111111">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="GFRI LaTeX predložak">
+    <meta property="og:description" content="Pisani rad, Beamer prezentacija i Turnitin priprema u jednom usklađenom LaTeX predlošku.">
+    <meta property="og:url" content="https://vjagodnik.github.io/GFRI-Template/">
+    <meta property="og:image" content="https://vjagodnik.github.io/GFRI-Template/assets/og-card.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GFRI LaTeX predložak">
+    <meta name="twitter:description" content="Jedan izvor podataka. Dva gotova formata.">
+    <meta name="twitter:image" content="https://vjagodnik.github.io/GFRI-Template/assets/og-card.png">
+    <title>GFRI LaTeX predložak</title>
+    <link rel="icon" href="assets/gfri-logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#sadrzaj">Preskoči na sadržaj</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#vrh" aria-label="GFRI predložak — početna">
+          <img src="assets/gfri-logo.png" alt="" width="164" height="70">
+          <span>LaTeX predložak</span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Glavna navigacija">
+          <a href="#mogucnosti">Mogućnosti</a>
+          <a href="#pregled">Pregled</a>
+          <a href="#pocetak">Početak</a>
+          <a href="#dokumentacija">Dokumentacija</a>
+        </nav>
+
+        <div class="header-actions">
+          <details class="mobile-menu">
+            <summary>Izbornik</summary>
+            <nav aria-label="Mobilna navigacija">
+              <a href="#mogucnosti">Mogućnosti</a>
+              <a href="#pregled">Pregled</a>
+              <a href="#pocetak">Početak</a>
+              <a href="#dokumentacija">Dokumentacija</a>
+            </nav>
+          </details>
+          <a class="button button-small button-dark" href="https://github.com/vjagodnik/GFRI-Template" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="sadrzaj">
+      <section class="hero" id="vrh">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <div class="eyebrow"><span>v2.0.0</span> GFRI LaTeX predlošci</div>
+            <h1>Jedan izvor podataka.<br>Dva gotova formata.</h1>
+            <p class="hero-lead">Pripremite završni ili diplomski rad, usklađenu Beamer prezentaciju i verziju za Turnitin — bez ponavljanja osnovnih podataka.</p>
+            <div class="hero-actions">
+              <a class="button button-dark" href="https://github.com/vjagodnik/GFRI-Template/releases/latest" target="_blank" rel="noreferrer">Preuzmi najnoviju verziju</a>
+              <a class="text-link" href="#pocetak">Kako započeti <span aria-hidden="true">↓</span></a>
+            </div>
+            <ul class="hero-notes" aria-label="Glavne značajke">
+              <li>pdfLaTeX i LuaLaTeX</li>
+              <li>Beamer 16:9</li>
+              <li>Automatska Turnitin verzija</li>
+            </ul>
+          </div>
+
+          <div class="hero-demo reveal" aria-label="Primjer zajedničkih podataka">
+            <div class="demo-window">
+              <div class="demo-toolbar">
+                <span>podaci.tex</span>
+                <span class="demo-status">jedini izvor podataka</span>
+              </div>
+              <pre><code><span class="code-muted">% Osnovni podatci</span>
+<span class="code-command">\newcommand</span>{\autor}{Fredrik Lamb}
+<span class="code-command">\newcommand</span>{\naslov}{Naslov rada}
+<span class="code-command">\newcommand</span>{\vrsta}{Završni rad}
+
+<span class="code-muted">% Pripadnost projektu</span>
+<span class="code-command">\GFRIprojekttrue</span></code></pre>
+              <div class="demo-output">
+                <div><span class="output-mark">A4</span><strong>Pisani rad</strong><small>naslovnica i projektna izjava</small></div>
+                <div><span class="output-mark">16:9</span><strong>Beamer</strong><small>naslovni i projektni slajd</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="mogucnosti">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="kicker">Što dobivate</p>
+            <h2>Od dokumenta do obrane rada</h2>
+            <p>Tri međusobno povezana dijela pokrivaju cijeli završni korak studija.</p>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-card reveal">
+              <div class="product-number">01</div>
+              <h3>Pisani rad</h3>
+              <p>Strukturirani predložak za završne i diplomske radove s naslovnicom, izjavama, sadržajem, popisima i literaturom.</p>
+              <ul class="check-list">
+                <li>Zajednički podatci u jednoj datoteci</li>
+                <li>Numeracija poglavlja, slika i tablica</li>
+                <li>Podrška za znanstveni projekt</li>
+              </ul>
+            </article>
+
+            <article class="product-card product-card-featured reveal">
+              <div class="product-number">02</div>
+              <h3>Beamer prezentacija</h3>
+              <p>Čist format 16:9 koji automatski preuzima naslov, autora, studij, kolegij i podatke o projektu iz pisanog rada.</p>
+              <ul class="check-list">
+                <li>GFRI vizualni identitet</li>
+                <li>Partnerski i projektni logotipi</li>
+                <li>Sekcije, tablice, slike i blokovi</li>
+              </ul>
+            </article>
+
+            <article class="product-card reveal">
+              <div class="product-number">03</div>
+              <h3>Turnitin priprema</h3>
+              <p>Posebna verzija rada za provjeru izvornosti, uz ručni postupak ili automatiziranu pripremu.</p>
+              <ul class="check-list">
+                <li>Uklanjanje naslovnih i uvodnih stranica</li>
+                <li>Kontrolirano isključivanje slika i tablica</li>
+                <li>Alati za pouzdanu kompilaciju</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="pregled">
+        <div class="container">
+          <div class="showcase-heading reveal">
+            <div>
+              <p class="kicker">Stvarni izlaz predloška</p>
+              <h2>Pogledajte prije preuzimanja</h2>
+            </div>
+            <p>Pregledi su generirani iz datoteka koje dolaze s repozitorijem. Kliknite na prikaz za veću verziju.</p>
+          </div>
+
+          <div class="preview-grid">
+            <button class="preview-card preview-document reveal" type="button" data-preview="assets/pisani-rad.jpg" data-caption="Naslovnica pisanog rada">
+              <img src="assets/pisani-rad.jpg" alt="Primjer naslovnice završnog rada" loading="lazy">
+              <span><strong>Pisani rad</strong><small>A4 naslovnica</small></span>
+            </button>
+            <div class="preview-stack">
+              <button class="preview-card reveal" type="button" data-preview="assets/beamer-naslovnica.jpg" data-caption="Naslovni slajd Beamer prezentacije">
+                <img src="assets/beamer-naslovnica.jpg" alt="Primjer naslovnog slajda Beamer prezentacije" loading="lazy">
+                <span><strong>Beamer</strong><small>Naslovni slajd 16:9</small></span>
+              </button>
+              <button class="preview-card reveal" type="button" data-preview="assets/beamer-projekt.jpg" data-caption="Slajd pripadnosti projektu">
+                <img src="assets/beamer-projekt.jpg" alt="Primjer slajda s podatcima o projektu" loading="lazy">
+                <span><strong>Projekt</strong><small>Uvjetni slajd i logotip</small></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section quick-start" id="pocetak">
+        <div class="container">
+          <div class="section-heading section-heading-light reveal">
+            <p class="kicker">Brzi početak</p>
+            <h2>Tri koraka do prvog PDF-a</h2>
+            <p>Predložak je složen tako da se sadržaj uređuje odvojeno od izgleda.</p>
+          </div>
+
+          <ol class="steps">
+            <li class="step reveal">
+              <div class="step-index">01</div>
+              <h3>Preuzmite predložak</h3>
+              <p>Preuzmite posljednje izdanje ili klonirajte repozitorij.</p>
+              <div class="code-row">
+                <code>git clone https://github.com/vjagodnik/GFRI-Template.git</code>
+                <button class="copy-button" type="button" data-copy="git clone https://github.com/vjagodnik/GFRI-Template.git">Kopiraj</button>
+              </div>
+            </li>
+            <li class="step reveal">
+              <div class="step-index">02</div>
+              <h3>Unesite svoje podatke</h3>
+              <p>Uredite samo zajedničku datoteku s naslovom, autorom, studijem i projektom.</p>
+              <div class="file-pill">GFRI-Template/podaci.tex</div>
+            </li>
+            <li class="step reveal">
+              <div class="step-index">03</div>
+              <h3>Izradite PDF</h3>
+              <p>Pokrenite priloženi alat za pisani rad ili Beamer prezentaciju.</p>
+              <div class="code-row">
+                <code>python3 compile.py</code>
+                <button class="copy-button" type="button" data-copy="python3 compile.py">Kopiraj</button>
+              </div>
+            </li>
+          </ol>
+          <p class="sr-only" id="copy-status" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section class="section" id="detalji">
+        <div class="container feature-layout">
+          <div class="feature-intro reveal">
+            <p class="kicker">Manje ponavljanja</p>
+            <h2>Jedna promjena ostaje usklađena posvuda</h2>
+            <p><code>podaci.tex</code> povezuje pisani rad i prezentaciju. Promijenite naslov ili projekt jednom, a oba dokumenta koriste novu vrijednost.</p>
+          </div>
+          <div class="feature-list">
+            <article class="feature-row reveal">
+              <span>01</span>
+              <div><h3>Zajednički metapodatci</h3><p>Autor, JMBAG, studij, kolegij, naslov i vrsta rada definirani su na jednom mjestu.</p></div>
+            </article>
+            <article class="feature-row reveal">
+              <span>02</span>
+              <div><h3>Projekt na jedan prekidač</h3><p><code>\GFRIprojekttrue</code> uključuje projektnu izjavu, projektni slajd i aktivne logotipe.</p></div>
+            </article>
+            <article class="feature-row reveal">
+              <span>03</span>
+              <div><h3>Pouzdana kompilacija</h3><p>Priloženi alati provode potreban broj prolaza i sažimaju bitna upozorenja.</p></div>
+            </article>
+            <article class="feature-row reveal">
+              <span>04</span>
+              <div><h3>Predložak koji se može prilagoditi</h3><p>Fontovi, logotipi, slike i struktura poglavlja dokumentirani su i odvojeni od sadržaja.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="dokumentacija">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="kicker">Dokumentacija</p>
+            <h2>Detaljne upute kada ih trebate</h2>
+          </div>
+          <div class="docs-grid">
+            <a class="docs-card reveal" href="https://github.com/vjagodnik/GFRI-Template/blob/main/README.md" target="_blank" rel="noreferrer">
+              <span class="docs-type">Osnovno</span>
+              <h3>Pisani rad</h3>
+              <p>Struktura repozitorija, unos podataka, poglavlja, literatura i postavke ispisa.</p>
+              <span class="card-link">Otvori upute <span aria-hidden="true">↗</span></span>
+            </a>
+            <a class="docs-card reveal" href="https://github.com/vjagodnik/GFRI-Template/blob/main/beamer/README.md" target="_blank" rel="noreferrer">
+              <span class="docs-type">Prezentacija</span>
+              <h3>Beamer</h3>
+              <p>Logotipi, slike, veličine fontova, projektni slajd i načini kompilacije.</p>
+              <span class="card-link">Otvori upute <span aria-hidden="true">↗</span></span>
+            </a>
+            <a class="docs-card reveal" href="https://github.com/vjagodnik/GFRI-Template/blob/main/TurnitIn.md" target="_blank" rel="noreferrer">
+              <span class="docs-type">Provjera izvornosti</span>
+              <h3>Turnitin</h3>
+              <p>Ručna i automatska priprema dokumenta za predaju u sustav Turnitin.</p>
+              <span class="card-link">Otvori upute <span aria-hidden="true">↗</span></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container cta-inner reveal">
+          <div>
+            <p class="kicker">Spremni za početak?</p>
+            <h2>Usredotočite se na sadržaj rada.</h2>
+            <p>Predložak preuzima strukturu, usklađivanje i završnu pripremu.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="button button-light" href="https://github.com/vjagodnik/GFRI-Template/releases/latest" target="_blank" rel="noreferrer">Preuzmi izdanje</a>
+            <a class="button button-outline-light" href="https://github.com/vjagodnik/GFRI-Template" target="_blank" rel="noreferrer">Pogledaj repozitorij</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <img src="assets/gfri-logo.png" alt="Sveučilište u Rijeci, Građevinski fakultet" width="164" height="70">
+          <p>LaTeX predlošci za završne i diplomske radove.</p>
+        </div>
+        <div class="footer-meta">
+          <a href="https://github.com/vjagodnik/GFRI-Template" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://github.com/vjagodnik/GFRI-Template/releases" target="_blank" rel="noreferrer">Izdanja</a>
+          <span>© <span id="current-year">2026</span> GFRI Template</span>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="preview-dialog" id="preview-dialog">
+      <button class="dialog-close" type="button" aria-label="Zatvori pregled">×</button>
+      <figure>
+        <img id="dialog-image" src="assets/beamer-naslovnica.jpg" alt="">
+        <figcaption id="dialog-caption"></figcaption>
+      </figure>
+    </dialog>
+  </body>
+</html>
