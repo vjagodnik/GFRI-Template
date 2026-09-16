@@ -27,20 +27,19 @@ U mapi pod naslovom "dataset" postavljaju se podatci za grafičku obradu i izrad
 - izjava.tex - izjava studenta o samostalnoj izradi završnog rada,
 - naslovnica.tex - dokument koji kreira naslovnicu završnog/diplomskog rada,
 - strutura.tex - dokument koji sadrži većinu potrebnih paketa za uspješno generiranje dokumenta,
-- dokument.tex - osnovni dokument za kompiliranje završnog/diplomskog rada.
+- dokument.tex - osnovni dokument za kompiliranje završnog/diplomskog rada,
+- podaci.tex - zajednički podatci za pisani rad i Beamer prezentaciju.
 
-Ukoliko je rad napravljen u sklopu istraživačkog projekta, potrebno je aktivirati određene linije u datoteci "dokument.tex":
-- linije 20 - 24: detalji projekta
-- linija 30: aktiviranje datoteke "izjava_projekt.tex"
-
-Više o izmjenama u podpoglavlju "Izmjene u dokumentu 'dokument.tex'".
+Ukoliko je rad napravljen u sklopu istraživačkog projekta, detalji projekta
+upisuju se u datoteku `podaci.tex`. Beamer iz iste datoteke automatski preuzima
+podatke za slajd o pripadnosti projektu.
 
 
 # Redoslijed 
 
 Student nužno izmjenjuje samo slijedeće dokumente:
 - izjava.tex
-- dokument.tex
+- podaci.tex
 
 Ukoliko je odlučeno da se završni rad printa kao obostran, potrebno je izmjeniti i "struktura.tex".
 
@@ -53,9 +52,9 @@ Student u dokumentu "izjava.tex" odabire odgovarajući rod kandidata i mentora
 
 ```
 
-## Imjene u dokumentu "dokument.tex"
+## Izmjene u dokumentu "podaci.tex"
 
-Kandidat u dokumentu "dokument.tex" imjenjuje linije kôda 11 - 17 te upisuje odgovarajuće podatke kako je navedeno ispod.
+Kandidat u dokumentu "podaci.tex" upisuje podatke koji se zajednički koriste u pisanom radu i Beamer prezentaciji.
 
 ```tex
 \newcommand{\autor} {Fredrik Lamb}
@@ -67,7 +66,7 @@ Kandidat u dokumentu "dokument.tex" imjenjuje linije kôda 11 - 17 te upisuje od
 \newcommand{\vrsta}{Završni rad } % ili Diplomski
 ```
 
-Ukoliko je rad izrađen u sklopu istraživačkog projekta, potrebno je izmjeniti linije 20 - 24 te unijeti odgovarajuće podatke o projektu.
+Ukoliko je rad izrađen u sklopu istraživačkog projekta, potrebno je unijeti odgovarajuće podatke o projektu u istoj datoteci.
 
 ```tex
 \newcommand{\projekt}{Naziv projekta}
@@ -113,8 +112,6 @@ Izmjene se vrše u linijama 180, 181 i 182 dokumenta "struktura.tex" na način d
 \addeditor{VJ}
 \addeditor{VF}
 ```
-
-
 
 
 

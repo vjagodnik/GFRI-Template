@@ -5,6 +5,11 @@ Predložak je namijenjen prezentacijama Građevinskog fakulteta u Rijeci. GF log
 slajdovima i u podnožju ostalih slajdova. Tema koristi crnu, bijelu i sivu boju.
 Tanka traka uz donji rub svakog slajda prikazuje napredak kroz prezentaciju.
 
+Naslov, autor, studij, kolegij i podatci o projektu preuzimaju se iz zajedničke
+datoteke `../GFRI-Template/podaci.tex`. Iste podatke koristi i pisani rad, pa ih
+je potrebno unositi samo na jednom mjestu. Slajd s pripadnošću projektu nalazi
+se neposredno prije završnog slajda.
+
 Logotipi se spremaju u mapu `logo`, a fotografije, dijagrami i ostale slike u
 mapu `slike`. Predložak već pretražuje obje mape pri umetanju grafike.
 

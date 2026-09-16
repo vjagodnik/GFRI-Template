@@ -5,6 +5,9 @@
 \usepackage{booktabs}
 \graphicspath{{slike/}{logo/}}
 
+% Zajednički podatci iz pisanog rada.
+\input{../GFRI-Template/podaci.tex}
+
 % Putanje do logotipa. GF logo ostaje obvezan.
 \GFRIsetmainlogo{logo/gflogo.pdf}
 \GFRIsetpartnerlogoA{logo/logoipsum-434.png}
@@ -15,10 +18,10 @@
 \GFRIpartnerAtrue
 \GFRIpartnerBfalse
 
-\title{Naslov prezentacije}
-\subtitle{Podnaslov ili naziv kolegija}
-\author{Ime i prezime}
-\institute{Sveučilište u Rijeci, Građevinski fakultet}
+\title{\naslov}
+\subtitle{\vrsta{} -- \kolegij}
+\author{\autor}
+\institute{\studij{} studij, \smjer\\Sveučilište u Rijeci, Građevinski fakultet}
 \date{Rijeka, \the\year.}
 
 \begin{document}
@@ -97,6 +100,23 @@
     \item Navedite ograničenje koje utječe na tumačenje.
     \item Istaknite sljedeći korak ili preporuku.
   \end{enumerate}
+\end{frame}
+
+\section*{Pripadnost projektu}
+
+\begin{frame}{Pripadnost projektu}
+  Rad je izrađen u sklopu znanstvenog projekta.
+
+  \vspace{0.30cm}
+  \begin{block}{\projekt}
+    \small
+    \begin{tabular}{@{}p{0.28\textwidth}p{0.62\textwidth}@{}}
+      Voditelj projekta & \voditeljProjekta \\
+      Šifra projekta & \sifraProjeka \\
+      Financijer projekta & \moneyProjekta \\
+      Pravna nadležnost & \nadleznostProjeka
+    \end{tabular}
+  \end{block}
 \end{frame}
 
 \section*{Hvala na pozornosti}
