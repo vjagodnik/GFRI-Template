@@ -22,42 +22,39 @@
 \newcommand{\sifraProjeka}{123123}
 \newcommand{\moneyProjekta}{Sveučilište u Rijeci}
 \newcommand{\nadleznostProjeka}{Republika Hrvatska}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
-%%			labels and captions
+%%          labels and captions
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \usepackage{environ}
 
-%
 \makeatletter
 \newcommand{\DiscardFloat}[1]{%
-	\RenewEnviron{#1}{%
-		\begingroup
-		\renewcommand{\caption}[2][]{\refstepcounter{#1}}%
-		\setbox0=\vbox{\BODY}%
-		\endgroup
-	}%
+    \RenewEnviron{#1}{%
+        \begingroup
+        \renewcommand{\caption}[2][]{\refstepcounter{#1}}%
+        \setbox0=\vbox{\BODY}%
+        \endgroup
+    }%
 }
 \DiscardFloat{figure}
 \DiscardFloat{table}
 \makeatother
 
-% --- reuse labels from A.aux ---
+% --- reuse labels from dokument.aux ---
 \makeatletter
 \InputIfFileExists{dokument.aux}{}{}
 \makeatother
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
-%%			bibliography
+%%          bibliography
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \makeatletter
 % Save the original commands
@@ -67,20 +64,16 @@
 % Redefine the bibliography environment to be completely empty
 \renewenvironment{thebibliography}[1]
 {\original@thebibliography{#1}% Start the environment
-	\setbox0\vbox\bgroup% Begin capturing content (but discard it)
+    \setbox0\vbox\bgroup% Begin capturing content (but discard it)
 }
 {\egroup% End capturing
-	\original@endthebibliography% Properly end the environment
+    \original@endthebibliography% Properly end the environment
 }
 \makeatother
 
 
-
-
-
-
 \begin{document}
-
+%
 %\input{./naslovnica.tex}
 %\input{./izjava.tex}
 %\input{./izjava_projekt.tex}
@@ -106,9 +99,9 @@
 %\cleardoublepage
 %\listoftables
 %\addcontentsline{toc}{chapter}{\listtablename}
-
-\clearpage
-
+%
+%\clearpage
+%
 \pagenumbering{arabic}
 \pagestyle{plain}
 \setcounter{page}{1}
@@ -121,13 +114,17 @@
 
 \cleardoublepage\phantomsection
 
+%\printbibliography
+\vspace{\baselineskip}
+%\label{Bibliography}
+%\renewcommand{\bibname}{\uppercase{Literatura}}
+%\addcontentsline{toc}{chapter}{\textbf{Literatura}}
+
 % Remove bibliography title and TOC entry
 \renewcommand{\bibname}{}   % no "Literatura"
 \renewcommand{\refname}{}   % covers other classes
-%\addcontentsline{toc}{chapter}{\textbf{Literatura}}
 
 \bibliographystyle{unsrtnat-GFRI}
 \bibliography{bibliography}
-
-% ============================
+%\bibliographystyle{vancouver}
 \end{document}

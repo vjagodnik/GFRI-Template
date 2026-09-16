@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.9)  16 SEP 2026 09:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.9)  16 SEP 2026 09:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**dokument.tex
-(./dokument.tex
+**turnitin.tex
+(./turnitin.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24>
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/book.cls
@@ -1327,61 +1327,95 @@ Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \titlewidthlast=\dimen340
 \titlewidthfirst=\dimen341
 ))
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 26
-.
+(/usr/local/texlive/2022/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
 
-(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/t1ptm.fd
+(/usr/local/texlive/2022/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+(./dokument.aux)
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 75
+.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 
 LaTeX Warning: Unused global option(s):
     [onesided].
 
-(./dokument.aux)
-\openout1 = `dokument.aux'.
+(./turnitin.aux
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 26.
+LaTeX Warning: Label `ch:rand' multiply defined.
+
+
+Package natbib Warning: Citation `Peiris1970' multiply defined.
+
+
+Package natbib Warning: Citation `Massoudi2001' multiply defined.
+
+
+Package natbib Warning: Citation `Gutierrez2009' multiply defined.
+
+
+Package natbib Warning: Citation `doi:10.1680/geot.1986.36.1.65' multiply defin
+ed.
+
+
+Package natbib Warning: Citation `krahn' multiply defined.
+
+
+Package natbib Warning: Citation `cornforth1961plane' multiply defined.
+
+
+Package natbib Warning: Citation `jeffShut' multiply defined.
+
+
+Package natbib Warning: Citation `vaid1992strength' multiply defined.
+
+)
+\openout1 = `turnitin.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 75.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
-26.
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/txfonts/omltxmi.fd
+75.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 75.
 LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 
-26.
+75.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 75.
 LaTeX Font Info:    Trying to load font information for OMX+txex on input line 
-26.
+75.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 26.
-LaTeX Font Info:    Trying to load font information for U+txexa on input line 2
-6.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 75.
+LaTeX Font Info:    Trying to load font information for U+txexa on input line 7
+5.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
 
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1421,9 +1455,9 @@ Package caption Info: End \AtBeginDocument code.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 26.
+ on input line 75.
 
-Package hyperref Info: Link coloring OFF on input line 26.
+Package hyperref Info: Link coloring OFF on input line 75.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -1436,12 +1470,12 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count372
 )
-LaTeX Info: Redefining \ref on input line 26.
-LaTeX Info: Redefining \pageref on input line 26.
-LaTeX Info: Redefining \nameref on input line 26.
- (./dokument.out) (./dokument.out)
+LaTeX Info: Redefining \ref on input line 75.
+LaTeX Info: Redefining \pageref on input line 75.
+LaTeX Info: Redefining \nameref on input line 75.
+ (./turnitin.out) (./turnitin.out)
 \@outlinefile=\write4
-\openout4 = `dokument.out'.
+\openout4 = `turnitin.out'.
 
 
 *geometry* driver: auto-detecting
@@ -1478,218 +1512,98 @@ LaTeX Info: Redefining \nameref on input line 26.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(./naslovnica.tex
-Underfull \hbox (badness 10000) in paragraph at lines 6--6
- []\T1/ptm/b/n/14 SVEUƒILI’TE U RI-JECI 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
- []\T1/ptm/b/n/14 GRAÐEVINSKI FA-KUL-TET 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--16
- []\T1/ptm/b/n/14 Preddiplomski sve-u£i-li²ni 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--20
- []\T1/ptm/b/n/14 Pozitivan 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--24
- [] \T1/ptm/b/n/14 Fi-lo-zo-fija gra-že-vi-nar-stva 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--55
- []\T1/ptm/b/n/14 Fredrik Lamb 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--59
- []\T1/ptm/b/n/14 000111222 
- []
-
-
-Underfull \hbox (badness 2150) in paragraph at lines 69--69
- [] \T1/ptm/b/n/14 Tko pije, a tko pla¢a na ne-ak-tiv-nom gra-di-li-²tu? 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
- []\T1/ptm/b/n/12 Zavr²ni rad 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 101--102
- []\T1/ptm/b/n/12 Rijeka, 16. rujna 2026. 
- []
-
-[1
-
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2]) (./izjava.tex [3]) (./izjava_projekt.tex
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 21.
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
-File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 21.
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omlztmcm.fd
-File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 21.
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omsztmcm.fd
-File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 21.
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omxztmcm.fd
-File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 21
-.
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/base/ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 2
-1.
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/txfonts/utxsya.fd
-File: utxsya.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Trying to load font information for U+txsyb on input line 2
-1.
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/txfonts/utxsyb.fd
-File: utxsyb.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
-1.
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 2
-1.
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/txfonts/utxmia.fd
-File: utxmia.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 2
-1.
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/txfonts/utxsyc.fd
-File: utxsyc.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 21
-.
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/wasysym/uwasy.fd
-File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
- [4])
-(./Poglavlja/zahvale.tex) [5] [6
-
-] (./Poglavlja/sazetak.tex) [1
-
-] [2
-
-]
-(./dokument.toc)
-\tf@toc=\write5
-\openout5 = `dokument.toc'.
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.45 \cleardoublepage
-                      [1
-
-]
-pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.45 \cleardoublepage
-                      [2
-
-] (./dokument.lof)
-\tf@lof=\write6
-\openout6 = `dokument.lof'.
-
- [3
-
-] [4
-
-] (./dokument.lot)
-\tf@lot=\write7
-\openout7 = `dokument.lot'.
-
- [5
-
-]
 (./Poglavlja/poglavlje1.tex
 Poglavlje 1.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 1.
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.7 
-     [1
+[1
 
 
-])
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.61 \cleardoublepage
-                      [2] (./Poglavlja/poglavlje2.tex
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+[2] (./Poglavlja/poglavlje2.tex
 Poglavlje 2.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 1.
 
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
+ 24.
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
+ 24.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.27 \lipsum[1-3] \cite
-                       {Massoudi2001} [3
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
+ 24.
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
+ 24.
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 24
+.
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 2
+4.
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/txfonts/utxsya.fd
+File: utxsya.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 2
+4.
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/txfonts/utxsyb.fd
+File: utxsyb.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
+4.
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 2
+4.
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/txfonts/utxmia.fd
+File: utxmia.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 2
+4.
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/txfonts/utxsyc.fd
+File: utxsyc.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 24
+.
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
+ [3
 
 
-])
-pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.63 \cleardoublepage
-                      [4] (./Poglavlja/poglavlje3.tex
+]) [4]
+(./Poglavlja/poglavlje3.tex
 Poglavlje 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1698,42 +1612,28 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.8 
-     [5
+ [5
 
 
 ]
-<Slike/2dtrans.jpg, id=160, 845.1575pt x 550.055pt>
+<Slike/2dtrans.jpg, id=81, 845.1575pt x 550.055pt>
 File: Slike/2dtrans.jpg Graphic file (type jpg)
 <use Slike/2dtrans.jpg>
-Package pdftex.def Info: Slike/2dtrans.jpg  used on input line 12.
+Package pdftex.def Info: Slike/2dtrans.jpg  used on input line 15.
 (pdftex.def)             Requested size: 291.78174pt x 189.90346pt.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.22 
-      [6]
-<Slike/assembly.jpg, id=167, 337.26pt x 359.09157pt>
+[6]
+<Slike/assembly.jpg, id=87, 337.26pt x 359.09157pt>
 File: Slike/assembly.jpg Graphic file (type jpg)
 <use Slike/assembly.jpg>
-Package pdftex.def Info: Slike/assembly.jpg  used on input line 25.
+Package pdftex.def Info: Slike/assembly.jpg  used on input line 28.
 (pdftex.def)             Requested size: 291.78174pt x 310.67567pt.
- [7 <./Slike/2dtrans.jpg>]
-Underfull \vbox (badness 1308) has occurred while \output is active []
-
- [8 <./Slike/assembly.jpg>]
+ [7]
 PGFPlots: reading {./dataset/etadil.txt}
 
 
 Package pgfplots Warning: Table './dataset/etadil.txt' has an empty column name
-; replacing it by '12'' on input line 51.
+; replacing it by '12'' on input line 89.
 
  [warning /pgfplots/warning/empty column name]
 NOTE: coordinate (,) has been dropped because of a coordinate filter. (see also
@@ -1768,7 +1668,7 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-Package pgfplots info on input line 85: fill between: activating layered graphi
+Package pgfplots info on input line 89: fill between: activating layered graphi
 cs
 \pgf@layerbox@axis background=\box148
 \pgf@layerboxsaved@axis background=\box149
@@ -1786,52 +1686,78 @@ cs
 \pgf@layerboxsaved@axis descriptions=\box161
 \pgf@layerbox@axis foreground=\box162
 \pgf@layerboxsaved@axis foreground=\box163
-Package pgfplots info on input line 85: Setting layers 'axis background,axis gr
+Package pgfplots info on input line 89: Setting layers 'axis background,axis gr
 id,axis ticks,axis lines,axis tick labels,pre main,main,axis descriptions,axis 
 foreground'...
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 85.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 89.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 85.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 89.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 85.
-) [9] [10] (./dokument.bbl
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 89.
+) [8] (./turnitin.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 9--15
 []$\T1/ptm/m/n/12 https : / / www . witpress . com / elibrary / wit-[]transacti
 ons-[]on-[]the-[]built-[]environment / 15 /
  []
 
-) [11
+)
+
+Package natbib Warning: There were multiply defined citations.
+
+[9
 
 
-] (./dokument.aux)
-Package rerunfilecheck Info: File `dokument.out' has not changed.
-(rerunfilecheck)             Checksum: 81159FA97DA6365E1C96ECB1A4D48814;705.
+] (./turnitin.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `turnitin.out' has not changed.
+(rerunfilecheck)             Checksum: D1AC1CA2ED4A317AF1ABECBD1AC58808;397.
  )
 (\end occurred when \iffalse on line 1 was incomplete)
 (\end occurred when \iffalse on line 1 was incomplete)
 (\end occurred when \iffalse on line 1 was incomplete) 
 Here is how much of TeX's memory you used:
- 42615 strings out of 478268
- 982501 string characters out of 5846348
- 1481662 words of memory out of 5000000
- 59930 multiletter control sequences out of 15000+600000
- 533190 words of font info for 141 fonts, out of 8000000 for 9000
+ 42613 strings out of 478268
+ 983316 string characters out of 5846348
+ 1480572 words of memory out of 5000000
+ 59975 multiletter control sequences out of 15000+600000
+ 518247 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 93i,16n,94p,751b,2136s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/
-texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/ty
-pe1/urw/symbol/usyr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/tim
-es/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmbi8a
-.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr
-/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dokument.pdf (24 pages, 288428 bytes).
+ 93i,15n,94p,751b,2041s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{cite.krahn} has been referenced but does not exist,
+ replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.doi:10.1680/geot.1986.36.1.65} has been refere
+nced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.Gutierrez2009} has been referenced but does no
+t exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.5} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.Massoudi2001} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.Peiris1970} has been referenced but does not e
+xist, replaced by a fixed one
+
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+live/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/
+texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2022/texmf-dis
+t/fonts/type1/urw/times/utmr8a.pfb>
+Output written on turnitin.pdf (9 pages, 52257 bytes).
 PDF statistics:
- 269 PDF objects out of 1000 (max. 8388607)
- 205 compressed objects within 3 object streams
- 41 named destinations out of 1000 (max. 500000)
- 183 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 143 PDF objects out of 1000 (max. 8388607)
+ 96 compressed objects within 1 object stream
+ 23 named destinations out of 1000 (max. 500000)
+ 159 words of extra memory for PDF output out of 10000 (max. 10000000)
 
