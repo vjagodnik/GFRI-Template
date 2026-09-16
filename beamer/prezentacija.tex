@@ -3,21 +3,22 @@
 \usetheme{GFRI}
 \usepackage[croatian]{babel}
 \usepackage{booktabs}
+\graphicspath{{slike/}{logo/}}
 
 % Putanje do logotipa. GF logo ostaje obvezan.
-\GFRIsetmainlogo{gflogo.pdf}
-\GFRIsetpartnerlogoA{logoipsum-434.png}
-\GFRIsetpartnerlogoB{logoipsum-434.png}
+\GFRIsetmainlogo{logo/gflogo.pdf}
+\GFRIsetpartnerlogoA{logo/logoipsum-434.png}
+\GFRIsetpartnerlogoB{logo/logoipsum-434.png}
 
 % Svaki dodatni logo uključuje se ili isključuje zasebno.
 % Zamijenite false s true kada se pripadajući logo koristi.
-\GFRIpartnerAfalse
+\GFRIpartnerAtrue
 \GFRIpartnerBfalse
 
 \title{Naslov prezentacije}
 \subtitle{Podnaslov ili naziv kolegija}
 \author{Ime i prezime}
-\institute{Građevinski fakultet u Rijeci}
+\institute{Sveučilište u Rijeci, Građevinski fakultet}
 \date{Rijeka, \the\year.}
 
 \begin{document}
@@ -62,6 +63,14 @@
 
   \vspace{0.18cm}
   Dodatno objašnjenje treba biti sažeto i izravno povezano s prikazanim nalazom.
+\end{frame}
+
+\begin{frame}{Primjer slike}
+  \begin{figure}
+    \centering
+    \includegraphics[height=0.57\textheight]{primjer-slike.jpg}
+    \caption{Primjer slike učitane iz mape \texttt{slike}.}
+  \end{figure}
 \end{frame}
 
 \begin{frame}{Primjer tablice}
