@@ -34,6 +34,10 @@ Ukoliko je rad napravljen u sklopu istraživačkog projekta, detalji projekta
 upisuju se u datoteku `podaci.tex`. Beamer iz iste datoteke automatski preuzima
 podatke za slajd o pripadnosti projektu.
 
+Pripadnost projektu uključuje se naredbom `\GFRIprojekttrue`, a isključuje
+naredbom `\GFRIprojektfalse` u datoteci `podaci.tex`. Ista postavka upravlja
+projektnom izjavom u radu i projektnim slajdom u Beamer prezentaciji.
+
 
 # Redoslijed 
 
@@ -112,7 +116,6 @@ Izmjene se vrše u linijama 180, 181 i 182 dokumenta "struktura.tex" na način d
 \addeditor{VJ}
 \addeditor{VF}
 ```
-
 
 
 

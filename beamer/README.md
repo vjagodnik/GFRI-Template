@@ -10,6 +10,14 @@ datoteke `../GFRI-Template/podaci.tex`. Iste podatke koristi i pisani rad, pa ih
 je potrebno unositi samo na jednom mjestu. Slajd s pripadnošću projektu nalazi
 se neposredno prije završnog slajda.
 
+Pripadnost projektu uključuje se ili isključuje u zajedničkoj datoteci
+`../GFRI-Template/podaci.tex`:
+
+```tex
+\GFRIprojekttrue   % prikaži projektnu izjavu, projektni slajd i logo
+\GFRIprojektfalse  % sakrij projektnu izjavu i projektni slajd
+```
+
 Logotipi se spremaju u mapu `logo`, a fotografije, dijagrami i ostale slike u
 mapu `slike`. Predložak već pretražuje obje mape pri umetanju grafike.
 
@@ -35,6 +43,46 @@ Svaki se logotip uključuje ili isključuje zasebno:
 
 Datoteka `logo/logoipsum-434.png` služi samo kao privremeni primjer. Zamijenite
 je stvarnim partnerskim logotipima prije izrade završne prezentacije.
+Kada je `\GFRIprojekttrue`, svi uključeni partnerski logotipi prikazuju se i na
+slajdu „Pripadnost projektu”.
+
+## Veličine fontova
+
+Veličine fontova mijenjaju se u datoteci `beamerthemeGFRI.sty`, u bloku naredbi
+koje počinju s `\setbeamerfont`. Svaka naredba upravlja jednim dijelom
+prezentacije:
+
+| Naredba | Dio prezentacije |
+| --- | --- |
+| `title` | glavni naslov na naslovnom slajdu |
+| `subtitle` | vrsta rada i naziv kolegija |
+| `author` | ime i prezime autora |
+| `institute` | studij, smjer i fakultet |
+| `date` | mjesto i godina |
+| `frametitle` | naslov običnog slajda |
+| `framesubtitle` | podnaslov običnog slajda |
+| `section title` | naslov sekcijskog slajda |
+| `footline` | podatci u podnožju slajda |
+
+Trenutačne postavke naslovnog slajda izgledaju ovako:
+
+```tex
+\setbeamerfont{title}{size=\fontsize{25}{29}\selectfont,series=\bfseries}
+\setbeamerfont{subtitle}{size=\fontsize{10}{16}\selectfont}
+\setbeamerfont{author}{size=\normalsize,series=\bfseries}
+\setbeamerfont{institute}{size=\footnotesize}
+\setbeamerfont{date}{size=\footnotesize}
+```
+
+U izrazu `\fontsize{25}{29}` prvi broj određuje veličinu slova, a drugi razmak
+između redaka, oba u tipografskim točkama. Naredba `\selectfont` mora ostati na
+kraju izraza. Preporučuje se mijenjati veličinu u koracima od 1 do 2 točke, a
+razmak između redaka zadržati približno 3 do 5 točaka većim od veličine slova.
+
+Za standardne LaTeX veličine mogu se koristiti, od manje prema većoj,
+`\scriptsize`, `\footnotesize`, `\small`, `\normalsize`, `\large` i `\Large`.
+Opcija `series=\bfseries` uključuje podebljani rez, dok je
+`series=\mdseries` obični rez.
 
 ## Slike
 

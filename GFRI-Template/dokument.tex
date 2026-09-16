@@ -14,7 +14,9 @@
 
 \input{./naslovnica.tex}
 \input{./izjava.tex}
-\input{./izjava_projekt.tex}
+\ifGFRIprojekt
+  \input{./izjava_projekt.tex}
+\fi
 \pagestyle{empty}
 \input{./Poglavlja/zahvale}
 

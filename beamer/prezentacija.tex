@@ -102,22 +102,32 @@
   \end{enumerate}
 \end{frame}
 
-\section*{Pripadnost projektu}
+\ifGFRIprojekt
+  \section*{Pripadnost projektu}
 
-\begin{frame}{Pripadnost projektu}
-  Rad je izrađen u sklopu znanstvenog projekta.
+  \begin{frame}{Pripadnost projektu}
+    \begin{columns}[c,onlytextwidth]
+      \begin{column}{0.72\textwidth}
+        Rad je izrađen u sklopu znanstvenog projekta.
+      \end{column}
+      \begin{column}{0.24\textwidth}
+        \raggedleft
+        \GFRIpartnerlogos{0.95cm}
+      \end{column}
+    \end{columns}
 
-  \vspace{0.30cm}
-  \begin{block}{\projekt}
-    \small
-    \begin{tabular}{@{}p{0.28\textwidth}p{0.62\textwidth}@{}}
-      Voditelj projekta & \voditeljProjekta \\
-      Šifra projekta & \sifraProjeka \\
-      Financijer projekta & \moneyProjekta \\
-      Pravna nadležnost & \nadleznostProjeka
-    \end{tabular}
-  \end{block}
-\end{frame}
+    \vspace{0.30cm}
+    \begin{block}{\projekt}
+      \small
+      \begin{tabular}{@{}p{0.28\textwidth}p{0.62\textwidth}@{}}
+        Voditelj projekta & \voditeljProjekta \\
+        Šifra projekta & \sifraProjeka \\
+        Financijer projekta & \moneyProjekta \\
+        Pravna nadležnost & \nadleznostProjeka
+      \end{tabular}
+    \end{block}
+  \end{frame}
+\fi
 
 \section*{Hvala na pozornosti}
 
