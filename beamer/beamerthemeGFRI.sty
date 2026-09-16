@@ -102,15 +102,15 @@
 \setbeamercolor{block title alerted}{fg=white,bg=GFRIAccent}
 \setbeamercolor{block body alerted}{fg=GFRIInk,bg=GFRIPale}
 
-\setbeamerfont{title}{size=\fontsize{28}{32}\selectfont,series=\bfseries}
-\setbeamerfont{subtitle}{size=\fontsize{15}{19}\selectfont}
+\setbeamerfont{title}{size=\fontsize{25}{29}\selectfont,series=\bfseries}
+\setbeamerfont{subtitle}{size=\fontsize{10}{16}\selectfont}
 \setbeamerfont{author}{size=\normalsize,series=\bfseries}
-\setbeamerfont{institute}{size=\small}
-\setbeamerfont{date}{size=\small}
-\setbeamerfont{frametitle}{size=\fontsize{21}{25}\selectfont,series=\bfseries}
+\setbeamerfont{institute}{size=\footnotesize}
+\setbeamerfont{date}{size=\footnotesize}
+\setbeamerfont{frametitle}{size=\fontsize{19}{23}\selectfont,series=\bfseries}
 \setbeamerfont{framesubtitle}{size=\normalsize,series=\mdseries}
 \setbeamerfont{footline}{size=\scriptsize}
-\setbeamerfont{section title}{size=\fontsize{27}{32}\selectfont,series=\bfseries}
+\setbeamerfont{section title}{size=\fontsize{24}{29}\selectfont,series=\bfseries}
 \setbeamerfont{block title}{series=\bfseries}
 
 \setbeamertemplate{navigation symbols}{}
@@ -150,10 +150,11 @@
       at ($(current page.south east)+(-0.72cm,0.52cm)$)
       {\GFRIpartnerlogos{0.72cm}};
     \node[anchor=west,inner sep=0pt,text width=0.86\paperwidth]
-      at ($(current page.west)+(0.72cm,0.26cm)$)
+      at ($(current page.west)+(0.72cm,-0.46cm)$)
       {%
         \begin{minipage}{\linewidth}
-          {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}
+          {\hyphenpenalty=10000\exhyphenpenalty=10000\raggedright
+           \usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}
           \ifx\insertsubtitle\@empty\else
             \vspace{0.25cm}
             {\usebeamerfont{subtitle}\color{GFRISlate}\insertsubtitle\par}
